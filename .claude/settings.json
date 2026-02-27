@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/yoto/Desktop/claude_slop/treasure_slop && pnpm exec tsc --noEmit 2>&1"
+          }
+        ]
+      }
+    ]
+  }
+}
